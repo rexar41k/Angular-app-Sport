@@ -1,7 +1,7 @@
 (function(angular) {
 	var App = angular.module('app', ['ngRoute']);
 
-	App.config(['$routeProvider', function ($routeProvider) {
+	App.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 
 		$routeProvider
 			.when('/',{
@@ -15,6 +15,8 @@
 			.otherwise({
 				redirectTo: '/'
 			});
+
+			$locationProvider.html5Mode(true);
 	}]);
 
 	App.controller('MainCtrl',['$scope','$http','$location', function ($scope, $http, $location) {

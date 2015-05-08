@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<base href="/" />
 	<title>SportWikipedia.loc</title>
 
 	<link rel="icon" type="image/ico" href="img/favicon.ico">
@@ -30,7 +31,7 @@
 				<span ng-if="FilterGrud.length">Грудь:</span>
 			    <ul>
 			      	<li ng-repeat="work in FilterGrud = (grudi | filter:query)">
-						<a ng-href="#/grudi/{{ work.url }}">{{ work.name }}</a>
+						<a ng-href="/grudi/{{ work.url }}">{{ work.name }}</a>
 					</li>
 			    </ul>
 
