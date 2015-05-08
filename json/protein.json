@@ -1,0 +1,79 @@
+[
+	{
+		"name": "100% Whey protein",
+		"url": "whey-100",
+		"imgFolder": "pitanie/protein",
+		"description": "Протеин 100% Whey Gold Standard принадлежит к третьему и самому новому поколению протеинов производства Optimum Nutrition. Данный продукт включает в себя изолят и концентрат сывороточного белка, а также пептиды молочной сыворотки. При этом в 100% Whey Gold Standard содержится минимальное количество жиров и углеводов.",
+		"video": "uiq0EyiXjDI"
+	},
+	{
+		"name": "90% Whey protein",
+		"url": "whey-90",
+		"imgFolder": "pitanie/protein",
+		"description": "Протеин 90% Whey Gold Standard принадлежит к второму поколению протеинов производства Optimum Nutrition. Данный продукт включает в себя изолят и концентрат сывороточного белка, а также пептиды молочной сыворотки. При этом в 100% Whey Gold Standard содержится минимальное количество жиров и углеводов.",
+		"video": "Xnha9wzLppw"
+	},
+	{
+		"name": "95% Whey protein",
+		"url": "whey-95",
+		"imgFolder": "pitanie/protein",
+		"description": "Whey Protein 95 ультра фильтрация концентрата сывороточного белка обладает превосходным вкусом. Также белок молочной сыворотки обладает одной из самых высоко биологической ценностей, чем любой другой источник белка, благодаря своему прекрасному аминокислотному профилю и усвояемости. Высокая биологическая ценность означает, что она может дать больше усвоенных граммов аминокислот. ",
+		"video": "olmlMOdPxjs"
+	},
+	{
+		"name": "WHEY PROTEIN Power Pro",
+		"url": "whey-protein-power-pro"
+	},
+	{
+		"name": "100% Whey Gold Standard Optimum Nutrition",
+		"url": "100-whey-gold-standard-optimum-nutrition"
+	},
+	{
+		"name": "100 % Whey Protein Isolate ATOMIXX",
+		"url": "100-whey-protein-isolate-atomixx"
+	},
+	{
+		"name": "100 % Whey Protein IronMaxx",
+		"url": "100-whey-protein-ironmaxx"
+	},
+	{
+		"name": "Elite Whey Protein Dymatize Nutrition",
+		"url": "elite-whey-protein-dymatize-nutrition"
+	},
+	{
+		"name": "100% Premium Whey Protein MuscleTech",
+		"url": "100-premium-whey-protein-muscletech"
+	},
+	{
+		"name": "Elite Whey Protein Dymatize",
+		"url": "elite-whey-protein-dymatize"
+	},
+	{
+		"name": "100% Prostar Whey Protein Ultimate Nutrition",
+		"url": "100-prostar-whey-protein-ultimate-nutrition"
+	},
+	{
+		"name": "Delicious Whey Protein QNT",
+		"url": "delicious-whey-protein-qnt"
+	},
+	{
+		"name": "100 % Whey Protein ATOMIXX",
+		"url": "100-whey-protein-atomixx"
+	},
+	{
+		"name": "Nitro Pure Whey Gold BioTech",
+		"url": "nitro-pure-whey-gold-biotech"
+	},
+	{
+		"name": "Protein 80 QNT",
+		"url": "protein-80-qnt"
+	},
+	{
+		"name": "Platinum Hydrowhey Optimum Nutrition",
+		"url": "platinum-hydrowhey-optimum-nutrition"
+	},
+	{
+		"name": "ProBio Whey Protein Power Pro",
+		"url": "probio-whey-protein-power-pro"
+	}
+]

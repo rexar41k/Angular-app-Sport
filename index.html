@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SportWikipedia.loc</title>
+
+	<link rel="icon" type="image/ico" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/lib/angular.min.js"></script>
+	<script src="js/lib/angular-route.min.js"></script>
+
+	<script src="js/script.js"></script>
+</head>
+<body ng-app="app" ng-controller="MainCtrl">
+<!-- Начало контейнера с списком упражнений -->
+<div id="sidebar" class="interface">
+	<div ng-controller='TimeCtrl'>
+		<span><strong>Дата: </strong>{{ today  | date: 'dd/MM/yyyy' }}</span>
+		<span><strong>Время: </strong>{{ clock  | date: 'HH:mm:ss' }}</span>
+		<div class="top-div"><a href="#/"><img class="home" src="img/home.png" alt="На главную" width="24" height="24"></a></div>	
+	</div>
+	<div ng-controller='SelectionCtrl'>
+		<hr><span>Поиск:</span><select class="selectors" ng-model="selection" ng-options="item for item in items"></select><input type="text" placeholder="по названию..." ng-model="query">
+		<br><hr>
+		<!-- блок смены упражнений на спортпит -->
+		<div ng-switch on="selection">
+			<!-- начало блока упражнений -->
+			<div ng-switch-when="Упражнения" class="sdvig">
+				<span ng-if="FilterGrud.length">Грудь:</span>
+			    <ul>
+			      	<li ng-repeat="work in FilterGrud = (grudi | filter:query)">
+						<a ng-href="#/grudi/{{ work.url }}">{{ work.name }}</a>
+					</li>
+			    </ul>
+
+			    <span ng-if="FilterNogi.length">Ноги:</span>
+			    <ul>
+			      	<li ng-repeat="work in FilterNogi = (nogi | filter:query)">
+						<a ng-href="#/nogi/{{ work.url }}">{{ work.name }}</a>
+					</li>
+			    </ul>
+
+			    <span ng-if="FilterBiceps.length">Бицепс:</span>
+			    <ul>
+			      	<li ng-repeat="work in FilterBiceps = (biceps | filter:query)">
+						<a ng-href="#/biceps/{{ work.url }}">{{ work.name }}</a>
+					</li>
+			    </ul>
+			</div>
+			<!-- конец блока упражнений -->
+			<!-- начало блока спотривного питания -->
+			<div ng-switch-when="Питания" class="sdvig">
+				<span ng-if="FilterProt.length">Протеин:</span>
+			    <ul>
+			      	<li ng-repeat="work in FilterProt = (protein | filter:query)">
+						<a ng-href="#/protein/{{ work.url }}">{{ work.name }}</a>
+					</li>
+			    </ul>
+
+				<span ng-if="FilterGeyner.length">Гейнер:</span>
+			    <ul>
+			      	<li ng-repeat="work in FilterGeyner = (geyner | filter:query)">
+						<a ng-href="#/geyner/{{ work.url }}">{{ work.name }}</a>
+					</li>
+			    </ul>
+
+			    <span ng-if="FilterAmino.length">Аминокислоты:</span>
+			    <ul>
+			      	<li ng-repeat="work in FilterAmino = (amino | filter:query)">
+						<a ng-href="#/amino/{{ work.url }}">{{ work.name }}</a>
+					</li>
+			    </ul>
+			</div>
+			<!-- конец блока спотривного питания -->
+		<!-- конец блока смены упражнений на спортпит -->
+		</div>
+	</div>
+</div>
+<!-- Конец контейнера с списком упражнений -->
+
+<!-- Начало контейнера для отображения информации -->
+	<div class="container">
+		<ng-view></ng-view>
+	</div>
+<!-- Конец контейнера для отображения информации -->
+</body>
+</html>

@@ -1,0 +1,67 @@
+li {
+    list-style-type: none; /* Убираем маркеры в списках*/
+}
+
+body {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: Verdana, Arial, sans-serif;
+  background: #f4f4f4 url(../img/background.png);
+}
+
+div#sidebar {
+  background: #fff;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 360px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: 15px 0 30px 0px;
+  border-right: 1px solid #bbb;
+  box-shadow: 0 0 20px #ccc;
+  -webkit-box-shadow: 0 0 20px #ccc;
+  -moz-box-shadow: 0 0 20px #ccc;
+}
+div#sidebar span {
+  padding-left: 15px;
+}
+.interface {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif !important;
+}
+div.container {
+  position: relative;
+  width: 550px;
+  margin: 40px 0 50px 420px;
+}
+div.container img{
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 400px;
+}
+.top-div {
+  float: right;
+}
+.home {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
+.sdvig a {
+ -moz-transition: all 0.1s ease-in-out;
+ -o-transition: all 0.1s ease-in-out;
+ -webkit-transition: all 0.1s ease-in-out;
+ color:#222;
+ display:block;
+ }
+ 
+.sdvig a:hover {
+ -webkit-transform: translate(8px,0);
+ -moz-transform: translate(8px,0);
+ -o-transform: translate(8px,0);
+ color: #1FA2E1;
+ }

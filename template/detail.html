@@ -1,0 +1,13 @@
+<h2>{{ result.name }}</h2>
+
+<img ng-show="!result.imgFolder" calss="img" src="../img/default.png" alt="нет картинки" width="300" height="300">
+<img ng-show="result.imgFolder"calss="img" src="../img/{{ result.imgFolder }}/{{ result.url }}.png" alt="{{ result.name }}" width="300" height="300">
+
+<p ng-if="result.description"><strong>Описание: </strong>{{ result.description }}</p>
+
+<p ng-if="result.technique"><strong>Техника выполнения: </strong>{{ result.technique }}</p>
+
+<div ng-if="result.video">
+	<p><strong>Видео: </strong></p>
+	<youtube code='{{ result.video }}'></youtube>
+</div>
