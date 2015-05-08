@@ -18,6 +18,8 @@
 	}]);
 
 	App.controller('MainCtrl',['$scope','$http','$location', function ($scope, $http, $location) {
+		$scope.quotes = ["Концентрируйте внимание на своих мышцах", "Представляй в уме работу мышц", "Позируй столько, сколько можешь", "Развивай мышечную массу", "Займись пампингом", "Работая с тяжестями, используй мозги", "Тренируйся упорнее, чем остальные", "Выбирай правильные упражнения", "Используй большие веса с малым количеством повторов", "Варьируй свои тренировки", "Работай над слабостями", "Учись и используй свои инстинкты"];
+		$scope.randomQuote = $scope.quotes[Math.floor(Math.random() * $scope.quotes.length)];
 
 	  	$http.get('../json/grud.json').success(function(data, status, headers, config) {
 	  		$scope.grudi = data;
